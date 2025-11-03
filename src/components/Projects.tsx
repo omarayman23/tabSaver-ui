@@ -24,7 +24,7 @@ const projects = [
     featured: true,
     hackathonWinner: true,
     icon: Camera,
-    githubUrl: "https://github.com/omarhamdan010/PhotoAlarm",
+    githubUrl: "https://github.com/omarayman23/PhotoAlarm",
     demoUrl: "https://photo-alarm-yfw7.vercel.app/",
   },
   {
@@ -111,7 +111,7 @@ export function Projects() {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
                   {isHackathonWinner && (
-                    <div className="absolute top-4 right-4 flex items-center gap-2 px-3 py-1 bg-green-100 border border-green-600 rounded-full">
+                    <div className="absolute top-4 left-4 flex items-center gap-2 px-3 py-1 bg-green-100 border border-green-600 rounded-full z-10">
                       <Trophy className="w-4 h-4 text-green-700" />
                       <span className="text-sm text-green-700">Hackathon Winner</span>
                     </div>
@@ -136,7 +136,7 @@ export function Projects() {
                       {/* Project Content */}
                       <div className="flex-1 min-w-0">
                         <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-4">
-                          <div className={isHackathonWinner ? "pr-40" : ""}>
+                          <div>
                             <h3 className="text-2xl text-gray-900 mb-2 group-hover:text-gray-700 transition-colors">
                               {project.title}
                             </h3>
