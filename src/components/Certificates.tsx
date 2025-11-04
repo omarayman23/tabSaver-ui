@@ -23,7 +23,7 @@ const certificates = [
     title: "Ubuntu Linux Professional",
     issuer: "Canonical",
     date: "Oct 2025",
-    iconUrl: "https://i0.wp.com/www.webpronews.com/wp-content/uploads/2024/04/Canonical-Logo.png?fit=1920%2C1080&ssl=1",
+    iconUrl: "https://w7.pngwing.com/pngs/503/133/png-transparent-ubuntu-plain-logo-icon.png",
     credentialUrl: "https://media.licdn.com/dms/image/v2/D4D22AQGoOLq8hkIffA/feedshare-shrink_1280/B4DZoJ6NkzGgAs-/0/1761102846512?e=1763596800&v=beta&t=X0h7MvgstrX2ySpkEcYqi0I0HyldhT1QzOjJocZ2fys",
   },
   {
@@ -51,7 +51,7 @@ const certificates = [
     title: "Fortinet Network Expert, NSE1 & NSE2",
     issuer: "Fortinet",
     date: "Jun 2021",
-    iconUrl: "https://web-assets.claroty.com/fortinet-logo.wine.png",
+    iconUrl: "https://yt3.googleusercontent.com/U0mL3LUaX8QalC2wfLgFEvSYbcGm8jlnOA5zIVeH4zxfHIosP7mRbXqw3PabMNT-_ryBrTUB=s900-c-k-c0x00ffffff-no-rj",
     credentialUrl: "https://placeholder-credential-url.com",
   },
 ];
