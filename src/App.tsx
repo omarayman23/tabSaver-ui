@@ -1,5 +1,5 @@
 import { Hero } from "./components/Hero";
-import { About } from "./components/About";
+import { About } from "./components/About"; // <-- Make sure this is uncommented
 import { Experience } from "./components/Experience";
 import { OpenSource } from "./components/OpenSource";
 import { Projects } from "./components/Projects";
@@ -12,13 +12,13 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white">
       <Hero />
-      <About />
+      <About /> {/* <-- This will now show "Education & Achievements" */}
       <Experience />
       <OpenSource />
       <Projects />
       <Skills />
       <Certificates />
-      <WorkExperience />
+      <WorkExperience /> {/* This will correctly show "Work Experience" */}
       <Contact />
     </div>
   );
