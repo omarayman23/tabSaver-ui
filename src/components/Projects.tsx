@@ -101,10 +101,10 @@ export function Projects() {
               return (
                 <motion.div
                   key={index}
-                  // FIX: Default border is transparent, hover is gray. Winner stays green.
+                  // FIX: Border is now gold for Hackathon Winner, transparent for others
                   className={`group rounded-2xl transition-all duration-500 overflow-hidden relative ${
                     isHackathonWinner
-                      ? "bg-white border-2 border-green-600 hover:border-green-500 hover:shadow-2xl hover:shadow-green-200/50"
+                      ? "bg-white border-2 border-yellow-500 hover:border-yellow-400 hover:shadow-2xl hover:shadow-yellow-200/50" // Gold colors
                       : "bg-white border-2 border-transparent hover:border-gray-700 hover:shadow-2xl hover:shadow-gray-300/50"
                   }`}
                   initial={{ opacity: 0, y: 30 }}
@@ -112,9 +112,10 @@ export function Projects() {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
                   {isHackathonWinner && (
-                    <div className="absolute top-4 left-4 flex items-center gap-2 px-3 py-1 bg-green-100 border border-green-600 rounded-full z-10">
-                      <Trophy className="w-4 h-4 text-green-700" />
-                      <span className="text-sm text-green-700">Hackathon Winner</span>
+                    // FIX: Positioned Hackathon Winner badge to top-right corner
+                    <div className="absolute top-4 right-4 flex items-center gap-2 px-3 py-1 bg-yellow-100 border border-yellow-500 rounded-full z-10">
+                      <Trophy className="w-4 h-4 text-yellow-700" />
+                      <span className="text-sm text-yellow-700">Hackathon Winner</span>
                     </div>
                   )}
                   <div className="p-6 md:p-8">
@@ -123,13 +124,13 @@ export function Projects() {
                       <div
                         className={`flex-shrink-0 p-4 rounded-xl ${
                           isHackathonWinner
-                            ? "bg-green-50 border-2 border-green-600"
+                            ? "bg-yellow-50 border-2 border-yellow-500" // Gold colors
                             : "bg-gray-100 border-2 border-gray-900"
                         }`}
                       >
                         <Icon
                           className={`w-8 h-8 ${
-                            isHackathonWinner ? "text-green-700" : "text-gray-900"
+                            isHackathonWinner ? "text-yellow-700" : "text-gray-900" // Gold colors
                           }`}
                         />
                       </div>
