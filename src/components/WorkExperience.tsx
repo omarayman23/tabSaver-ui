@@ -56,7 +56,8 @@ const jobs = [
     company: "Macy's",
     location: "Leesburg, VA",
     period: "Mar 2023 - Dec 2024",
-    iconUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Macy%27s_logo.svg/2560px-Macy%27s_logo.svg.png",
+    // FIX: Updated this URL to a stable PNG
+    iconUrl: "https://assets.stickpng.com/images/58428b0fA6515b1e0ad75abf.png",
     type: "past",
     description: [
       "Exceeded sales targets consistently, achieving over $200,000 in total sales through personalized customer engagement and product recommendations.",
@@ -120,7 +121,8 @@ export function WorkExperience() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-lg overflow-hidden bg-gray-100 border border-gray-300 flex items-center justify-center flex-shrink-0 p-2">
+                  {/* FIX: Removed p-2 from this div */}
+                  <div className="w-14 h-14 rounded-lg overflow-hidden bg-gray-100 border border-gray-300 flex items-center justify-center flex-shrink-0">
                     <ImageWithFallback
                       src={job.iconUrl}
                       alt={`${job.company} logo`}
@@ -150,7 +152,8 @@ export function WorkExperience() {
             <DialogTitle className="text-2xl flex items-center gap-3">
               {selectedJob && (
                 <>
-                  <div className="w-12 h-12 rounded-lg overflow-hidden bg-gray-100 border border-gray-300 flex items-center justify-center flex-shrink-0 p-2">
+                  {/* FIX: Removed p-2 from this div */}
+                  <div className="w-12 h-12 rounded-lg overflow-hidden bg-gray-100 border border-gray-300 flex items-center justify-center flex-shrink-0">
                     <ImageWithFallback
                       src={selectedJob.iconUrl}
                       alt={`${selectedJob.company} logo`}
