@@ -123,7 +123,7 @@ export function WorkExperience() {
                   <div className="w-14 h-14 rounded-lg overflow-hidden bg-gray-100 border border-gray-300 flex items-center justify-center flex-shrink-0 p-2">
                     <ImageWithFallback
                       src={job.iconUrl}
-                      alt={\`\${job.company} logo\`}
+                      alt={`${job.company} logo`}
                       className="w-full h-full object-contain"
                     />
                   </div>
@@ -153,7 +153,7 @@ export function WorkExperience() {
                   <div className="w-12 h-12 rounded-lg overflow-hidden bg-gray-100 border border-gray-300 flex items-center justify-center flex-shrink-0 p-2">
                     <ImageWithFallback
                       src={selectedJob.iconUrl}
-                      alt={\`\${selectedJob.company} logo\`}
+                      alt={`${selectedJob.company} logo`}
                       className="w-full h-full object-contain"
                     />
                   </div>
