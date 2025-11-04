@@ -10,14 +10,14 @@ const education = [
     degree: "B.S Computer Science",
     dates: "May 2026 - May 2028",
     // FIX: Added a stable, high-quality image of the VT campus
-    imageUrl: "https://images.unsplash.com/photo-1589138848734-01c0b31e33ab?w=1920&q=80",
+    imageUrl: "https://www.transfervirginia.org/images/ProfileSliderImage_6A67B9EC3FC911EBB15B0242AC15010A.jpg",
   },
   {
     school: "NOVA Community College",
     degree: "A.S Computer Science",
     dates: "Aug 2024 - May 2026",
     // FIX: Added a stable, high-quality image of the NOVA Loudoun campus
-    imageUrl: "https://www.nvcc.edu/about/assets/images/loudoun-pano-01.jpg",
+    imageUrl: "https://honorlock.com/wp-content/uploads/2025/06/NOVA-768x432.jpg",
   },
 ];
 
