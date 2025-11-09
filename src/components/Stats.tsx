@@ -44,7 +44,7 @@ export function Stats() {
           <Card className="p-6">
             <div className="space-y-2">
               <p className="text-muted-foreground">Security Score</p>
-              <p className="text-4xl text-chart-1">100%</p>
+              <p className="text-4xl text-green-600 font-semibold">100%</p>
               <p className="text-muted-foreground">All data stays local</p>
             </div>
           </Card>
@@ -52,7 +52,7 @@ export function Stats() {
           <Card className="p-6">
             <div className="space-y-2">
               <p className="text-muted-foreground">Total Time Saved</p>
-              <p className="text-4xl text-chart-2">8 hrs</p>
+              <p className="text-4xl text-foreground font-semibold">8 hrs</p>
               <p className="text-muted-foreground">in just one month</p>
             </div>
           </Card>
